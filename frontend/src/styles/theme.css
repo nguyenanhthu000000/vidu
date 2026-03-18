@@ -1,0 +1,73 @@
+:root {
+    --rose: #F7CAC9;
+    --rose-soft: #fde6e5;
+
+    --serenity: #92A8D1;
+    --serenity-soft: #dfe6f5;
+
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,
+            var(--rose-soft),
+            var(--serenity-soft));
+    margin: 0;
+}
+
+/* card style */
+
+.card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* button */
+
+.btn {
+    background: linear-gradient(135deg,
+            var(--rose),
+            var(--serenity));
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* input */
+
+.input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+/* message */
+
+.msg-user {
+    background: var(--rose-soft);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.msg-ai {
+    background: var(--serenity-soft);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+}
